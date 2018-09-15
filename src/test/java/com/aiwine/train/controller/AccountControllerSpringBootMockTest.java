@@ -43,6 +43,6 @@ public class AccountControllerSpringBootMockTest {
         assertEquals(HttpStatus.OK.value(), response.getStatus());
 
         AccountResponse expected = new AccountResponse("AAA", "aaa", 100000);
-        assertEquals(jacksonTester.write(expected).getJson() , response.getContentAsString());
+        assertEquals("Body is not expected.", jacksonTester.write(expected).getJson() , response.getContentAsString());
     }
 }
