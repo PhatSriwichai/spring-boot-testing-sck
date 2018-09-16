@@ -4,6 +4,7 @@ import com.aiwine.train.controller.response.AccountResponse;
 import com.aiwine.train.model.Account;
 import com.aiwine.train.repository.AccountRepository;
 import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
@@ -23,6 +24,11 @@ public class AccountControllerUnitTest {
     private AccountRepository repository;
 
     private AccountController accountController;
+
+//    @BeforeClass
+//    public void initialOnce() {
+//        // run when start class
+//    }
 
     // Do Before by test case
     @Before

@@ -38,12 +38,12 @@ public class AccountController {
         throw new MyAccountNotFoundException(String.format("Account id=[%d] not found.", id));
     }
 
-    @PostConstruct
-    public void initData() {
-        Account account = new Account();
-        account.setUserName("fake");
-        account.setPassword("fake");
-        account.setSlary(0);
-        accountRepository.save(account);
-    }
+//    @PostConstruct
+//    public void initData() {
+//        Account account = new Account();
+//        account.setUserName("fake");
+//        account.setPassword("fake");
+//        account.setSlary(0);
+//        accountRepository.save(account);
+//    }
 }
