@@ -4,9 +4,6 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-//interface Repository {
-//    public String getById(int id);
-//}
 
 public class DemoTest {
 
