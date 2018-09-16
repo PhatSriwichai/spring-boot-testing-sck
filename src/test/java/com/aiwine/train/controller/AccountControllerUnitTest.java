@@ -3,6 +3,7 @@ package com.aiwine.train.controller;
 import com.aiwine.train.controller.response.AccountResponse;
 import com.aiwine.train.model.Account;
 import com.aiwine.train.repository.AccountRepository;
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
@@ -13,14 +14,21 @@ import java.util.Optional;
 
 import static org.junit.Assert.*;
 import static org.mockito.BDDMockito.given;
+import static org.mockito.MockitoAnnotations.initMocks;
 
-@RunWith(MockitoJUnitRunner.class)
+//@RunWith(MockitoJUnitRunner.class)
 public class AccountControllerUnitTest {
 
     @Mock
     private AccountRepository repository;
 
     private AccountController accountController;
+
+    // Do Before by test case
+    @Before
+    public void initial() {
+        initMocks(this);
+    }
 
     @Test
     public void getById() {
