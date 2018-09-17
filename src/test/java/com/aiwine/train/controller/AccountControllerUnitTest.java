@@ -1,11 +1,13 @@
 package com.aiwine.train.controller;
 
+import com.aiwine.train.category.UnitTest;
 import com.aiwine.train.controller.response.AccountResponse;
 import com.aiwine.train.model.Account;
 import com.aiwine.train.repository.AccountRepository;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
@@ -18,6 +20,7 @@ import static org.mockito.BDDMockito.given;
 import static org.mockito.MockitoAnnotations.initMocks;
 
 //@RunWith(MockitoJUnitRunner.class)
+@Category(UnitTest.class)
 public class AccountControllerUnitTest {
 
     @Mock

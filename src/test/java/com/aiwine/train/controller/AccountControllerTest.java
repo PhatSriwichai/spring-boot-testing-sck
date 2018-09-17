@@ -1,9 +1,11 @@
 package com.aiwine.train.controller;
 
+import com.aiwine.train.category.IntegrationTest;
 import com.aiwine.train.controller.response.AccountResponse;
 import com.aiwine.train.model.Account;
 import com.aiwine.train.repository.AccountRepository;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -19,6 +21,7 @@ import static org.springframework.boot.test.context.SpringBootTest.WebEnvironmen
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = RANDOM_PORT)
+@Category(IntegrationTest.class)
 public class AccountControllerTest {
 
     @Autowired

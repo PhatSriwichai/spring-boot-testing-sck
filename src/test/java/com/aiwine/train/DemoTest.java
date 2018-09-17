@@ -1,10 +1,13 @@
 package com.aiwine.train;
 
+import com.aiwine.train.category.UnitTest;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 
 import static org.junit.Assert.*;
 
 
+@Category(UnitTest.class)
 public class DemoTest {
 
     @Test

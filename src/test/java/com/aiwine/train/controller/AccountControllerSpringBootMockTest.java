@@ -1,10 +1,12 @@
 package com.aiwine.train.controller;
 
+import com.aiwine.train.category.IntegrationTest;
 import com.aiwine.train.controller.response.AccountResponse;
 import com.aiwine.train.model.Account;
 import com.aiwine.train.repository.AccountRepository;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -29,6 +31,7 @@ import static org.mockito.BDDMockito.given;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @AutoConfigureMockMvc
+@Category(IntegrationTest.class)
 public class AccountControllerSpringBootMockTest {
 
     @Autowired
